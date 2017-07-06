@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app>
+
+  <servlet>
+    <servlet-name>getImgUrl</servlet-name>
+    <servlet-class>imgOperation.getImgUrl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>getImgUrl</servlet-name>
+    <url-pattern>/getImgUrl</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>postTags</servlet-name>
+    <servlet-class>imgOperation.postTags</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>postTags</servlet-name>
+    <url-pattern>/postTags</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>UserLogin</servlet-name>
+    <servlet-class>User.UserLogin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserLogin</servlet-name>
+    <url-pattern>/UserLogin</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>UserRegister</servlet-name>
+    <servlet-class>User.UserRegister</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserRegister</servlet-name>
+    <url-pattern>/UserRegister</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>postImg</servlet-name>
+    <servlet-class>imgOperation.postImg</servlet-class>
+    <init-param> 
+      <param-name>filepath</param-name> 
+      <param-value>uploadFile</param-value> 
+    </init-param> 
+    <init-param> 
+      <param-name>temppath</param-name> 
+      <param-value>temp</param-value> 
+    </init-param> 
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>postImg</servlet-name>
+    <url-pattern>/postImg</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ManagerLogin</servlet-name>
+    <servlet-class>Manager.ManagerLogin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ManagerLogin</servlet-name>
+    <url-pattern>/ManagerLogin</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ManagerRegister</servlet-name>
+    <servlet-class>Manager.ManagerRegister</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ManagerRegister</servlet-name>
+    <url-pattern>/ManagerRegister</url-pattern>
+  </servlet-mapping>
+
+ <servlet>
+  <servlet-name>CreatePicSet</servlet-name>
+  <servlet-class>Manager.CreatePicSet</servlet-class>
+ </servlet> 
+ <servlet-mapping>
+  <servlet-name>CreatePicSet</servlet-name>
+  <url-pattern>/CreatePicSet</url-pattern>
+ </servlet-mapping>
+
+ <servlet>
+  <servlet-name>GetPicSet</servlet-name>
+  <servlet-class>Manager.GetPicSet</servlet-class>
+ </servlet>
+ <servlet-mapping>
+  <servlet-name>GetPicSet</servlet-name>
+  <url-pattern>/GetPicSet</url-pattern>
+ </servlet-mapping>
+
+  <servlet>
+    <servlet-name>getUserHistory</servlet-name>
+    <servlet-class>User.getUserHistory</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>getUserHistory</servlet-name>
+    <url-pattern>/getUserHistory</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>GetPhotos</servlet-name>
+    <servlet-class>Manager.GetPhotos</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetPhotos</servlet-name>
+    <url-pattern>/GetPhotos</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>reviseTags</servlet-name>
+    <servlet-class>User.reviseTags</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>reviseTags</servlet-name>
+    <url-pattern>/reviseTags</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ExportPhotos</servlet-name>
+    <servlet-class>Manager.ExportPhotos</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ExportPhotos</servlet-name>
+    <url-pattern>/ExportPhotos</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ShowManagerInfo</servlet-name>
+    <servlet-class>Manager.ShowManagerInfo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShowManagerInfo</servlet-name>
+    <url-pattern>/ShowManagerInfo</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ChangeManagerInfo</servlet-name>
+    <servlet-class>Manager.ChangeManagerInfo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ChangeManagerInfo</servlet-name>
+    <url-pattern>/ChangeManagerInfo</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>modifyUserProfile</servlet-name>
+    <servlet-class>User.modifyUserProfile</servlet-class>
+    <init-param>
+      <param-name>filepath</param-name>
+      <param-value>uploadFile</param-value>
+    </init-param>
+    <init-param>
+      <param-name>temppath</param-name>
+      <param-value>temp</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>modifyUserProfile</servlet-name>
+    <url-pattern>/modifyUserProfile</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>NyanNyan</servlet-name>
+    <servlet-class>NyanNyan</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>NyanNyan</servlet-name>
+    <url-pattern>/NyanNyan</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>getUserProfile</servlet-name>
+    <servlet-class>User.getUserProfile</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>getUserProfile</servlet-name>
+    <url-pattern>/getUserProfile</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>postUerInterests</servlet-name>
+    <servlet-class>User.postUerInterests</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>postUerInterests</servlet-name>
+    <url-pattern>/postUerInterests</url-pattern>
+  </servlet-mapping>
+
+<servlet>
+    <servlet-name>mama</servlet-name>
+    <servlet-class>mama</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>mama</servlet-name>
+    <url-pattern>/mama</url-pattern>
+  </servlet-mapping>
+
+</web-app>
